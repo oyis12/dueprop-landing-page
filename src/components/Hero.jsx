@@ -61,7 +61,9 @@ import house from "../assets/3dhouse.png";
 
 const Hero = () => {
   return (
-    <section className="mx-auto flex min-h-[80vh] max-w-7xl flex-col-reverse items-center justify-center gap-8 px-4 sm:px-6 lg:min-h-[90vh] lg:grid lg:grid-cols-2 lg:gap-12 lg:px-8 overflow-hidden">
+    // <section className="mx-auto flex min-h-[80vh] max-w-7xl flex-col-reverse items-center justify-center gap-8 px-4 sm:px-6 lg:min-h-[90vh] lg:grid lg:grid-cols-2 lg:gap-12 lg:px-8 overflow-hidden">
+      <section className="mx-auto flex min-h-[80vh] max-w-7xl flex-col-reverse items-center justify-center gap-8 px-4 pb-12 sm:px-6 lg:min-h-[90vh] lg:grid lg:grid-cols-2 lg:gap-12 lg:px-8 lg:pb-0 overflow-hidden">
+
       {/* Text Section */}
       <div className="flex flex-col justify-center text-center lg:text-left">
         <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
