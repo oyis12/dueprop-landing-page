@@ -7,8 +7,8 @@ export default function LandingPage() {
   return (
    <>
       <Hero />
-      <Engineered />
       <LossesAndHowItWorks />
+      <Engineered />
       <FAQAccordion />
    </>
   );
