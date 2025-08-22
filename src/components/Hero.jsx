@@ -81,7 +81,7 @@ const Hero = () => {
         <div className="mt-7 flex justify-center lg:justify-start">
           <a
             href="#verify"
-            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-lg font-semibold hover:bg-slate-50 shadow-md transition"
+            className="inline-flex items-center rounded-full text-white border border-slate-300 bg-[#1C7139] px-6 py-3 text-lg font-semibold hover:bg-green-700 shadow-md transition"
           >
             Start Verification Now
             <svg
