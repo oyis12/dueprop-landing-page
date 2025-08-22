@@ -6,7 +6,7 @@ import LossesAndHowItWorks from "../components/LossesAndHowItWorks";
 export default function LandingPage() {
   return (
    <>
-       <Hero />
+      <Hero />
       <Engineered />
       <LossesAndHowItWorks />
       <FAQAccordion />

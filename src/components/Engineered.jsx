@@ -56,7 +56,7 @@ export default function Engineered() {
           <div className="mt-6">
             <a
               href="#apply"
-              className="inline-flex items-center rounded-full bg-green-600 px-5 py-2 font-medium text-white shadow-sm hover:bg-green-700 transition-colors"
+              className="inline-flex items-center rounded-full bg-[#1C7139] px-5 py-2 font-medium text-white shadow-sm hover:bg-green-700 transition-colors"
             >
               Apply Now
               <svg

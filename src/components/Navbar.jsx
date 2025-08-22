@@ -75,7 +75,7 @@ export default function Navbar() {
           </a>
           <a
             href="#get-started"
-            className="inline-flex items-center justify-center rounded-full bg-green-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition"
+            className="inline-flex items-center justify-center rounded-full bg-[#1C7139] px-5 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition"
           >
             Get Started
           </a>
@@ -131,7 +131,7 @@ export default function Navbar() {
             </a>
             <a
               href="#get-started"
-              className="rounded-lg bg-green-600 px-3 py-2 text-center text-white hover:bg-green-700 transition"
+              className="rounded-lg bg-[#1C7139] px-3 py-2 text-center text-white hover:bg-green-700 transition"
             >
               Get Started
             </a>

@@ -78,7 +78,7 @@ export default function LossesAndHowItWorks() {
               <img src={one} alt="Provide Land Documents" className="max-w-[220px] md:max-w-sm" />
             </div>
             <div>
-              <span className="bg-green-600 text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-sm md:text-base font-bold mb-2 md:mb-3">
+              <span className="bg-[#1C7139] text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-sm md:text-base font-bold mb-2 md:mb-3">
                 1
               </span>
               <h3 className="font-semibold text-base md:text-lg mb-1 md:mb-2">
@@ -97,7 +97,7 @@ export default function LossesAndHowItWorks() {
           {/* Step 2 */}
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center mb-10 md:mb-12">
             <div className="order-2 md:order-1">
-              <span className="bg-green-600 text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-sm md:text-base font-bold mb-2 md:mb-3">
+              <span className="bg-[#1C7139] text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-sm md:text-base font-bold mb-2 md:mb-3">
                 2
               </span>
               <h3 className="font-semibold text-base md:text-lg mb-1 md:mb-2">
@@ -120,7 +120,7 @@ export default function LossesAndHowItWorks() {
               <img src={three} alt="Receive Report" className="max-w-[220px] md:max-w-sm" />
             </div>
             <div>
-              <span className="bg-green-600 text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-sm md:text-base font-bold mb-2 md:mb-3">
+              <span className="bg-[#1C7139] text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-sm md:text-base font-bold mb-2 md:mb-3">
                 3
               </span>
               <h3 className="font-semibold text-base md:text-lg mb-1 md:mb-2">Receive Your Report.</h3>
