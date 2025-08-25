@@ -15,7 +15,7 @@ const faqs = [
           <li>Family ownership claims</li>
           <li>Excision and gazette records</li>
           <li>Government acquisition and consent</li>
-          <li>Registered title (C of O, Deed of Assignment, Gazette, or Register)</li>
+          <li>Registered title (C of O, Deed of Assignment, Gazette,Letter of Consent, or Register)</li>
           <li>Planning/land use approvals</li>
           <li>Whether land is under government use or subject to disputes</li>
         </ul>
@@ -29,17 +29,30 @@ const faqs = [
   {
     question: "How long does the verification process take?",
     answer:
-      "The verification process typically takes between 5 to 10 business days depending on complexity.",
+      "Most verifications report are ready within 5–10 working days, but complex cases may take a little longer.",
   },
   {
     question: "What documents do I need to upload for verification?",
     answer:
-      "You’ll need key property documents such as survey plan, C of O, excision, deed of assignment, or gazette.",
+      "To verify a property, you only need one key document—like a survey plan, C of O, excision, deed of assignment, letter of consent, or gazette. If you don’t have all of them (for example, when buying from a real estate developer), no problem. With just one, we can help you get the others and guide you through the process.",
   },
   {
     question: "Who performs the verification?",
-    answer:
-      "Our verifications are performed by licensed professionals and verified experts in land and property law.",
+    answer:(
+      <div className="space-y-2 text-gray-600 text-sm md:text-base">
+        <p>
+         Our verifications are carried out by a team of professionals who work directly with the right authorities and offices responsible for land matters. This includes:
+        </p>
+        <ul className="list-disc list-inside">
+          <li> <b>The Land Registry (e.g Ages, Nagis)</b> – to confirm ownership records and check for encumbrances, validate Certificates of Occupancy (C of O), Gazette records, and other approvals.</li>
+          <li><b>Surveyor-General’s Office</b> – to verify survey plans, boundaries, and whether the land falls under government acquisition.</li>
+          <li><b>Licensed Surveyors & Property Lawyers</b> – who double-check documents and confirm compliance.</li>
+        </ul>
+        <p>
+         Finally, you will receive a comprehensive Lawyer’s Report summarizing all findings, risks, and recommendations, so you can make your property decision with full confidence.
+        </p>
+      </div>
+    )
   },
   {
     question: "Is Dueprop affiliated with the government?",
@@ -82,7 +95,7 @@ const FAQAccordion = () => {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 py-12">
+    <section className="w-full max-w-7xl mx-auto px-4 py-12">
       <h2 className="text-2xl md:text-3xl font-bold mb-6">
         Frequently Asked Questions
       </h2>

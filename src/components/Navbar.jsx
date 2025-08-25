@@ -159,9 +159,9 @@ import logo from "../assets/dlogo.png";
 
 const links = [
   { href: "#about", label: "About Us" },
-  { href: "#features", label: "Features" },
+  { href: "#features", label: "How It Works" },
   { href: "#testimonials", label: "Testimonials" },
-  { href: "#blogs", label: "Blogs" },
+  // { href: "#blogs", label: "Blogs" },
   { href: "#faq", label: "FAQ" },
 ];
 
@@ -222,7 +222,7 @@ export default function Navbar() {
             href="#login"
             className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
           >
-            Login
+            {/* Login */}
           </a>
           <a
             href="#get-started"

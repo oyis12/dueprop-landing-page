@@ -7,9 +7,9 @@ export default function LossesAndHowItWorks() {
     <section className="w-full px-4 md:px-16 py-10 md:py-16 bg-white">
       {/* Stats Section */}
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-base md:text-xl font-bold mb-6 leading-snug">
+        <h1 className="text-base md:text-xl font-bold mb-6 leading-snug">
           Estimated Losses That Should Be Averted In Nigeria Annually (Every Year).
-        </h2>
+        </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 mb-8">
           {/* Card 1 */}

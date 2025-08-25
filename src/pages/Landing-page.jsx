@@ -3,6 +3,7 @@ import EstimatedLosses from "../components/EstimatedLosses";
 import FAQAccordion from "../components/FAQAccordion ";
 import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
+import TestimonialSlider from "../components/Testimonials";
 
 export default function LandingPage() {
   return (
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <EstimatedLosses />
       <Engineered />
       <HowItWorks />
+      <TestimonialSlider/>
       <FAQAccordion />
    </>
   );
