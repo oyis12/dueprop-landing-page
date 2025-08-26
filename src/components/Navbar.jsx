@@ -56,12 +56,12 @@ export default function Navbar() {
 
           {/* Right actions */}
           <div className="hidden lg:flex items-center gap-3">
-            <a
+            {/* <a
               href="#login"
               className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
             >
               Login
-            </a>
+            </a> */}
             <button
               onClick={() => setShowModal(true)}
               className="inline-flex items-center justify-center rounded-full bg-[#1C7139] px-5 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition"
@@ -109,12 +109,12 @@ export default function Navbar() {
                     {l.label}
                   </a>
                 ))}
-                <a
+                {/* <a
                   href="#login"
                   className="mt-4 rounded-lg border border-slate-300 px-3 py-2 text-center"
                 >
                   Login
-                </a>
+                </a> */}
                 <button
                   onClick={() => {
                     setOpen(false);
