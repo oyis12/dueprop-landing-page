@@ -156,6 +156,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/dlogo.png";
+import DueDiligenceForm from "./DueDiligenceForm";
 
 const links = [
   { href: "#about", label: "About Us" },
@@ -224,6 +225,7 @@ export default function Navbar() {
           >
             {/* Login */}
           </a>
+          <DueDiligenceForm/>
           <a
             href="#get-started"
             className="inline-flex items-center justify-center rounded-full bg-[#1C7139] px-5 py-2.5 text-sm font-medium text-white hover:bg-green-700 transition"
