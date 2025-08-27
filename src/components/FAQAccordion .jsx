@@ -95,7 +95,8 @@ const FAQAccordion = () => {
   };
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 py-12">
+    <section className="w-full px-4 md:px-16 py-12 md:py-16">
+      <div className="w-11/12 mx-auto">
       <h2 className="text-2xl md:text-3xl font-bold mb-6">
         Frequently Asked Questions
       </h2>
@@ -129,6 +130,7 @@ const FAQAccordion = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
