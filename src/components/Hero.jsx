@@ -59,6 +59,7 @@
 
 import house from '../assets/3dhouse.png'
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from "framer-motion";
 import DueDiligenceForm from './DueDiligenceForm'
 
 export default function Hero () {
@@ -66,10 +67,11 @@ export default function Hero () {
 
   // Prevent body scroll when menu or modal is open
   useEffect(() => {
-    document.body.style.overflow = open || showModal ? 'hidden' : ''
-  }, [open, showModal])
+    document.body.style.overflow = showModal ? 'hidden' : ''
+  }, [showModal])
 
   return (
+    <>
     <section className='mx-auto flex min-h-[80vh] max-w-7xl flex-col-reverse items-center justify-center gap-8 px-4 pb-12 sm:px-6 lg:min-h-[90vh] lg:grid lg:grid-cols-2 lg:gap-12 lg:px-8 lg:pb-0 overflow-hidden'>
       {/* Text Section */}
       <div className='flex flex-col justify-center text-center lg:text-left'>
@@ -88,7 +90,7 @@ export default function Hero () {
         <div className='mt-7 flex justify-center lg:justify-start'>
           <button
             onClick={() => setShowModal(true)}
-            className='inline-flex items-center rounded-full text-white border border-slate-300 bg-[#1C7139] px-6 py-3 text-lg font-semibold hover:bg-green-700 shadow-md transition'
+            className='cursor-pointer inline-flex items-center rounded-full text-white border border-slate-300 bg-[#1C7139] px-6 py-3 text-lg font-semibold hover:bg-green-700 shadow-md transition'
           >
             Start Verification Now
             <svg
@@ -119,5 +121,32 @@ export default function Hero () {
         />
       </div>
     </section>
+
+     {/* ✅ Modal with Framer Motion */}
+      <AnimatePresence>
+        {showModal && (
+          <>
+            {/* Overlay */}
+            <motion.div
+              className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowModal(false)}
+            />
+            {/* Modal */}
+            <motion.div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+            >
+              <DueDiligenceForm onClose={() => setShowModal(false)} />
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </>
   )
 }

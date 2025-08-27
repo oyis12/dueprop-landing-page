@@ -1,6 +1,7 @@
-
-import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import tt from "../assets/info.png";
+import { useEffect, useState } from "react";
+import DueDiligenceForm from './DueDiligenceForm'
 
 const points = [
   "Real Properties. Real Owners. Verified Documents.",
@@ -10,7 +11,15 @@ const points = [
 ];
 
 export default function Engineered() {
+    const [showModal, setShowModal] = useState(false)
+  
+    // Prevent body scroll when menu or modal is open
+    useEffect(() => {
+      document.body.style.overflow = showModal ? 'hidden' : ''
+    }, [showModal])
+
   return (
+    <>
     <section className="w-full bg-[#EAEAEA] py-10">
       {/* Top intro text */}
       <div className="px-6 lg:px-16">
@@ -54,9 +63,9 @@ export default function Engineered() {
 
           {/* CTA */}
           <div className="mt-6">
-            <a
-              href="#apply"
-              className="inline-flex items-center rounded-full bg-[#1C7139] px-5 py-2 font-medium text-white shadow-sm hover:bg-green-700 transition-colors"
+            <button
+              onClick={() => setShowModal(true)}
+              className="cursor-pointer inline-flex items-center rounded-full bg-[#1C7139] px-5 py-2 font-medium text-white shadow-sm hover:bg-green-700 transition-colors"
             >
               Apply Now
               <svg
@@ -74,7 +83,7 @@ export default function Engineered() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
 
@@ -90,5 +99,31 @@ export default function Engineered() {
         </div>
       </div>
     </section>
+         {/* ✅ Modal with Framer Motion */}
+          <AnimatePresence>
+            {showModal && (
+              <>
+                {/* Overlay */}
+                <motion.div
+                  className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setShowModal(false)}
+                />
+                {/* Modal */}
+                <motion.div
+                  className="fixed inset-0 z-50 flex items-center justify-center p-4"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
+                  transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                >
+                  <DueDiligenceForm onClose={() => setShowModal(false)} />
+                </motion.div>
+              </>
+            )}
+          </AnimatePresence>
+    </>
   );
 }
