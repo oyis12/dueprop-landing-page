@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
-
+import partner1 from '../assets/partner-1.png';
+import partner2 from '../assets/partner-2.png';
+import partner3 from '../assets/partner-3.png';
 const faqs = [
   {
     question: "What exactly does Dueprop verify?",
@@ -131,6 +133,40 @@ const FAQAccordion = () => {
           </div>
         ))}
       </div>
+
+       <section class='bg-white py-12'>
+        <div class='container mx-auto px-6'>
+          <h2 class='text-2xl md:text-3xl font-bold text-center mb-8'>
+            Our Partners
+          </h2>
+
+          <div class='grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-items-center'>
+            <div class='flex justify-center'>
+              <img
+                src={partner1}
+                alt='Partner 1 Logo'
+                class='h-10 md:h-15 object-contain'
+              />
+            </div>
+
+            <div class='flex justify-center'>
+              <img
+                src={partner2}
+                alt='Partner 2 Logo'
+                class='h-10 md:h-15 object-contain'
+              />
+            </div>
+
+            <div class='flex justify-center'>
+              <img
+                src={partner3}
+                alt='Partner 3 Logo'
+                class='h-10 md:h-15 object-contain'
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       </div>
     </section>
   );

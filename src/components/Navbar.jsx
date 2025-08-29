@@ -8,7 +8,8 @@ const links = [
   { href: '/about', label: 'About Us' },
   // { href: '/verifications', label: 'Verfication Types' },
   // { href: '/testimonials', label: 'Testimonials' },
-  { href: '/faq', label: 'FAQ' }
+  { href: '/faq', label: 'FAQ' },
+   { href: '/contact', label: 'Contact' },
 ]
 
 export default function Navbar () {

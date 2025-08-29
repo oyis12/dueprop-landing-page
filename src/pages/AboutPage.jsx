@@ -5,6 +5,9 @@ import Hero from '../components/Hero'
 import HowItWorks from '../components/HowItWorks'
 import Navbar from '../components/Navbar'
 import TestimonialSlider from '../components/Testimonials'
+import partner1 from '../assets/partner-1.png'
+import partner2 from '../assets/partner-2.png'
+import partner3 from '../assets/partner-3.png'
 
 export default function AboutPage () {
   return (
@@ -20,7 +23,7 @@ export default function AboutPage () {
               className='absolute inset-0 bg-cover bg-center'
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1560184897-77ec180b1a09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
+                  "url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
               }}
             ></div>
 
@@ -110,28 +113,37 @@ export default function AboutPage () {
                 We collaborate with leading institutions and organizations to
                 strengthen trust in Nigeria’s real estate ecosystem.
               </p>
-              <div className='grid grid-cols-2 md:grid-cols-4 gap-8 items-center'>
-                <img
-                  src='https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_Nigerian_Banks.png'
-                  alt='Partner 1'
-                  className='h-14 mx-auto grayscale hover:grayscale-0 transition'
-                />
-                <img
-                  src='https://upload.wikimedia.org/wikipedia/commons/e/e0/Nigerian_Institute_of_Estate_Surveyors_and_Valuers_logo.png'
-                  alt='Partner 2'
-                  className='h-14 mx-auto grayscale hover:grayscale-0 transition'
-                />
-                <img
-                  src='https://upload.wikimedia.org/wikipedia/commons/4/4e/Nigerian_Bar_Association_logo.png'
-                  alt='Partner 3'
-                  className='h-14 mx-auto grayscale hover:grayscale-0 transition'
-                />
-                <img
-                  src='https://upload.wikimedia.org/wikipedia/commons/6/6b/Coat_of_arms_of_Nigeria.svg'
-                  alt='Partner 4'
-                  className='h-14 mx-auto grayscale hover:grayscale-0 transition'
-                />
-              </div>
+              <section class='bg-white py-12'>
+                <div class='container mx-auto px-6'>
+                  
+
+                  <div class='grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-items-center'>
+                    <div class='flex justify-center'>
+                      <img
+                        src={partner1}
+                        alt='Partner 1 Logo'
+                        class='h-10 md:h-15 object-contain'
+                      />
+                    </div>
+
+                    <div class='flex justify-center'>
+                      <img
+                        src={partner2}
+                        alt='Partner 2 Logo'
+                        class='h-10 md:h-15 object-contain'
+                      />
+                    </div>
+
+                    <div class='flex justify-center'>
+                      <img
+                        src={partner3}
+                        alt='Partner 3 Logo'
+                        class='h-10 md:h-15 object-contain'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </section>
 

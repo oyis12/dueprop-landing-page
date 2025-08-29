@@ -18,14 +18,14 @@ const  Footer = () => {
               Quick Links
             </h4>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>
+              {/* <li>
                 <a href="#verify" className="hover:text-white">Start Verification</a>
+              </li> */}
+              <li>
+                <a href="/about" className="hover:text-white">About Us</a>
               </li>
               <li>
-                <a href="#about" className="hover:text-white">About Us</a>
-              </li>
-              <li>
-                <a href="#faq" className="hover:text-white">FAQs</a>
+                <a href="/faq" className="hover:text-white">FAQs</a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-white">Contact</a>

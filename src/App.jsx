@@ -5,6 +5,7 @@ import HomePage from './pages/Home-page.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotFound from './pages/NotFound.jsx'
 import FaqPage from './pages/Faq-page.jsx'
+import Contact from './pages/Contact.jsx'
 
 export default function App () {
   return (
@@ -13,6 +14,7 @@ export default function App () {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/faq' element={<FaqPage />} />
+         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
