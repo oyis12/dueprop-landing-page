@@ -113,13 +113,21 @@ export default function Navbar () {
                 onClick={() => setOpen(false)}
               />
               {/* Drawer */}
-              <motion.div
+              {/* <motion.div
                 className='fixed right-0 top-0 z-50 h-screen w-[18rem] max-w-[90vw] bg-white shadow-xl p-6 flex flex-col gap-4'
                 initial={{ x: '100%' }}
                 animate={{ x: 0 }}
                 exit={{ x: '100%' }}
                 transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               >
+             <div className='flex items-center gap-2 mb-4'>
+                <img
+                  src={logo}
+                  alt='Dueprop Logo'
+                  className='h-9 w-9 rounded-full'
+                />
+                <span className='text-lg font-semibold text-slate-900'>Dueprop</span>
+              </div>
                 <button
                   onClick={() => setOpen(false)}
                   className='ml-auto mb-4 inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300'
@@ -176,7 +184,88 @@ export default function Navbar () {
                 >
                   Get Started
                 </button>
-              </motion.div>
+              </motion.div> */}
+             {/* Drawer */}
+<motion.div
+  className='fixed right-0 top-0 z-50 h-screen w-[18rem] max-w-[90vw] bg-white shadow-xl p-6 flex flex-col gap-4'
+  initial={{ x: '100%' }}
+  animate={{ x: 0 }}
+  exit={{ x: '100%' }}
+  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+>
+  {/* Logo & Close Button Row */}
+  <div className='flex items-center justify-between mb-6'>
+    <div className='flex items-center gap-2'>
+      <img
+        src={logo}
+        alt='Dueprop Logo'
+        className='h-9 w-9 rounded-full'
+      />
+      <span className='text-lg font-semibold text-slate-900'>Dueprop</span>
+    </div>
+    <button
+      onClick={() => setOpen(false)}
+      className='inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300'
+    >
+      <svg
+        width='20'
+        height='20'
+        viewBox='0 0 24 24'
+        stroke='currentColor'
+        fill='none'
+      >
+        <path
+          d='M6 6l12 12M6 18L18 6'
+          strokeWidth='2'
+          strokeLinecap='round'
+        />
+      </svg>
+    </button>
+  </div>
+
+  {/* Links */}
+  {links.map(l =>
+    l.href.startsWith('#') ? (
+      <a
+        key={l.href}
+        href={l.href}
+        onClick={() => setOpen(false)}
+        className={`rounded-lg px-3 py-2 text-base font-medium transition-colors ${
+          location.hash === l.href
+            ? 'text-green-700 bg-slate-100'
+            : 'text-slate-700 hover:bg-slate-100'
+        }`}
+      >
+        {l.label}
+      </a>
+    ) : (
+      <Link
+        key={l.href}
+        to={l.href}
+        onClick={() => setOpen(false)}
+        className={`rounded-lg px-3 py-2 text-base font-medium transition-colors ${
+          location.pathname === l.href
+            ? 'text-green-700 bg-slate-100'
+            : 'text-slate-700 hover:bg-slate-100'
+        }`}
+      >
+        {l.label}
+      </Link>
+    )
+  )}
+
+  {/* Get Started Button */}
+  <button
+    onClick={() => {
+      setOpen(false)
+      setShowModal(true)
+    }}
+    className='cursor-pointer rounded-lg bg-[#1C7139] px-3 py-2 text-center text-white hover:bg-green-700 transition'
+  >
+    Get Started
+  </button>
+</motion.div>
+
             </>
           )}
         </AnimatePresence>
