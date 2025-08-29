@@ -11,9 +11,9 @@ export default function DueDiligenceForm({ onClose }) {
         "The Location of the Property",
         "The title of the property and its nexus with the property at location",
       ],
-      time: "Typically reports back in 3 days",
+      time: "Typically reports back in 3 Working days",
       note: "Report results on Company report sheet",
-      formLink: "https://forms.gle/yourBasicFormLink",
+      formLink: "https://forms.gle/vNS1ax9WCkPT45fu9",
     },
     main: {
       title: "Main Due Diligence Test",
@@ -22,9 +22,9 @@ export default function DueDiligenceForm({ onClose }) {
         "The Title of the property and the authenticity of the title",
         "The wellness, state, size details and features of the property",
       ],
-      time: "Typically reports back in 3 days",
+      time: "Typically reports back in 5 Working days",
       note: "Report results on Company report sheet and attachments (e.g. FCDA endorsed report)",
-      formLink: "https://forms.gle/yourMainFormLink",
+      formLink: "https://forms.gle/hgc6bdcyAkYRbj5L8",
     },
     pro: {
       title: "Professional Due Diligence Test",
@@ -36,7 +36,7 @@ export default function DueDiligenceForm({ onClose }) {
       ],
       time: "Typically reports back in 1–2 weeks",
       note: "Report results on Company report sheet and attachments (Land Administrators office & Partnering Legal firm)",
-      formLink: "https://forms.gle/yourProFormLink",
+      formLink: "https://forms.gle/vD3TUzJ76p9PLfDw6",
     },
   };
 

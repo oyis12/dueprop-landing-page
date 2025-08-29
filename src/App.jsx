@@ -1,13 +1,21 @@
-import Footer from "./components/Footer.jsx";
-import Navbar from "./components/Navbar.jsx";
-import LandingPage from "./pages/Landing-page.jsx";
+import Footer from './components/Footer.jsx'
+import Navbar from './components/Navbar.jsx'
+import AboutPage from './pages/about-page.jsx'
+import HomePage from './pages/Home-page.jsx'
+import LandingPage from './pages/Home-page.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import NotFound from './pages/NotFound.js'
+import FaqPage from './pages/Faq-page.jsx'
 
-export default function App() {
+export default function App () {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <LandingPage />
-      <Footer />
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/faq' element={<FaqPage />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
