@@ -2,9 +2,10 @@ import one from "../assets/1.png";
 import two from "../assets/2.png";
 import three from "../assets/3.png";
 
+
 export default function LossesAndHowItWorks() {
   return (
-    <section className="w-full px-4 md:px-16 py-10 md:py-16 bg-white">
+    <section className="w-full px-4 md:px-16 py-10 md:py-16 bg-white" name="about">
       {/* Stats Section */}
       <div className="max-w-7xl mx-auto">
         <h1 className="text-base md:text-xl font-bold mb-6 leading-snug">
