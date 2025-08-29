@@ -6,8 +6,8 @@ import DueDiligenceForm from './DueDiligenceForm'
 
 const links = [
   { href: '/about', label: 'About Us' },
-  { href: '/verifications', label: 'Verfication Types' },
-  { href: '/testimonials', label: 'Testimonials' },
+  // { href: '/verifications', label: 'Verfication Types' },
+  // { href: '/testimonials', label: 'Testimonials' },
   { href: '/faq', label: 'FAQ' }
 ]
 
