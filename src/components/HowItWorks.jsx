@@ -16,7 +16,7 @@ export default function HowItWorks() {
 
   return (
   <>
-       <section className="w-full px-4 md:px-16 py-10 md:py-16 bg-white">
+       <section className="w-full md:px-16 py-10 md:py-16 bg-white">
       {/* <div className="max-w-7xl mx-auto"> */}
       <div className="w-11/12 mx-auto">
         {/* Heading */}
