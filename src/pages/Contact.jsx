@@ -1,6 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { motion, AnimatePresence } from 'framer-motion'
+import DueDiligenceForm from '../components/DueDiligenceForm'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,7 @@ const Contact = () => {
     subject: '',
     message: ''
   })
+   const [showModal, setShowModal] = useState(false)
 
   const handleInputChange = e => {
     const { name, value } = e.target
@@ -29,25 +32,25 @@ const Contact = () => {
     {
       title: 'Our Office',
       details: [
-        '123 Property Verification Avenue',
-        'Abuja, FCT 900001',
+        'House C5, Aknaton estate, Gospel light avenue, off dunamis road',
+        'Durumi, Area 1, Abuja, FCT 900001',
         'Nigeria'
       ]
     },
     {
       title: 'Phone Numbers',
       details: [
-        '+234 812 345 6789',
-        '+234 703 456 7890',
-        'WhatsApp: +234 812 345 6789'
+        '+234 703 632 6018',
+        '+234 806 190 8010',
+        'WhatsApp: +234 703 632 6018'
       ]
     },
     {
       title: 'Email Addresses',
       details: [
-        'info@dueprop.ng',
-        'verification@dueprop.ng',
-        'support@dueprop.ng'
+        'info@dueprop.com',
+        'verification@dueprop.com',
+        'support@dueprop.com'
       ]
     },
     {
@@ -78,7 +81,13 @@ const Contact = () => {
     }
   ]
 
+     useEffect(() => {
+      document.body.style.overflow = showModal ? 'hidden' : ''
+    }, [showModal])
+
+
   return (
+    <>
     <div>
       {/* Hero */}
  <Navbar />
@@ -118,7 +127,11 @@ const Contact = () => {
               package? We'd love to hear from you.
             </p>
 
-            <form onSubmit={handleSubmit} className='space-y-4'>
+            <form 
+             onSubmit={handleSubmit}
+             className='space-y-4'
+             method="POST"
+             >
               <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                 <div>
                   <label className='block text-sm font-medium'>
@@ -228,8 +241,10 @@ const Contact = () => {
                 Chat with our support team in real-time for immediate
                 assistance.
               </p>
-              <button className='bg-green-600 text-white px-4 py-2 rounded-lg w-full'>
-                Start Live Chat
+              <button className='bg-green-600 text-white px-4 py-2 rounded-lg w-full hover:bg-green-700 block text-center'>
+                <a href="https://wa.me/2347036326018" target="_blank" rel="noopener noreferrer">
+                  Start Live Chat
+                </a>
               </button>
             </div>
             <div className='p-6 bg-white rounded-lg shadow hover:shadow-lg transition'>
@@ -238,9 +253,14 @@ const Contact = () => {
                 Call us directly for detailed discussions about your
                 verification needs.
               </p>
-              <button className='border border-green-600 text-green-600 px-4 py-2 rounded-lg w-full hover:bg-green-50'>
+              {/* <button className='border border-green-600 text-green-600 px-4 py-2 rounded-lg w-full hover:bg-green-50'>
+                Call Now
+              </button> */}
+              <a href="tel:+2347036326018">
+              <button class="border border-green-600 text-green-600 px-4 py-2 rounded-lg w-full hover:bg-green-50">
                 Call Now
               </button>
+            </a>
             </div>
             <div className='p-6 bg-white rounded-lg shadow hover:shadow-lg transition'>
               <h3 className='font-semibold text-lg mb-2'>Email Support</h3>
@@ -248,7 +268,9 @@ const Contact = () => {
                 Send us detailed inquiries and receive comprehensive responses.
               </p>
               <button className='border border-green-600 text-green-600 px-4 py-2 rounded-lg w-full hover:bg-green-50'>
-                Send Email
+                <li className="list-none">
+                  <a href="mailto:info@dueprop.com">Send Email</a>
+                </li>
               </button>
             </div>
           </div>
@@ -284,13 +306,40 @@ const Contact = () => {
             Don't wait - secure your property investment with professional
             verification today.
           </p>
-          <button className='bg-white text-green-600 font-semibold px-6 py-3 rounded-lg'>
+          <button
+           onClick={() => setShowModal(true)}
+           className='bg-white text-green-600 font-semibold px-6 py-3 rounded-lg'>
             Get Started Now
           </button>
         </div>
       </section>
        <Footer />
     </div>
+
+    {/* ✅ Modal with Framer Motion */}
+          <AnimatePresence>
+            {showModal && (
+              <>
+                <motion.div
+                  className='fixed inset-0 z-40 bg-black/50 backdrop-blur-sm'
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setShowModal(false)}
+                />
+                <motion.div
+                  className='fixed inset-0 z-50 flex items-center justify-center p-4'
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                >
+                  <DueDiligenceForm onClose={() => setShowModal(false)} />
+                </motion.div>
+              </>
+            )}
+          </AnimatePresence>
+    </>
   )
 }
 

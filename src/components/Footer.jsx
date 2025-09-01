@@ -7,8 +7,7 @@ const  Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white">Dueprop</h3>
             <p className="mt-3 text-sm text-slate-400">
-              Bringing transparency & trust to Nigeria’s real estate landscape. 
-              Verify property before you buy.
+             Dueprop.com is an investigative and property verification system that performs property search services providing exclusive property information to ensure it is safe, encumbrance free and investment ready to prospects. Our report is not a buy approval but a guide to helping you make the right investment decision.
             </p>
           </div>
 
