@@ -6,10 +6,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotFound from './pages/NotFound.jsx'
 import FaqPage from './pages/Faq-page.jsx'
 import Contact from './pages/Contact.jsx'
+import WhatsAppChatButton from './components/WhatsAppChatButton.jsx'
 
 export default function App () {
   return (
     <BrowserRouter>
+    <WhatsAppChatButton />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
