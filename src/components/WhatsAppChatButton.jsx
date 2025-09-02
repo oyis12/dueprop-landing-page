@@ -1,14 +1,16 @@
+
+
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppChatButton = () => {
-  const phoneNumber = "+2347036326018";
-  const message = `👋 Hello, welcome to DueProp – Nigeria’s trusted property verification platform.
+  const phoneNumber = "2347036326018";
+  const message = ` Hello, welcome to DueProp – Nigeria’s trusted property verification platform.
 We help you verify land & property documents so you can buy safely and avoid scams.
 
 Please select an option to get started:
-⿡ Verify a property
-⿢ Learn how DueProp works
-⿣ Talk to a support agent`;
+1. Verify a property
+2. Learn how DueProp works
+3. Talk to a support agent`;
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -17,6 +19,7 @@ Please select an option to get started:
       <span className="absolute bottom-16 right-0 bg-gray-800 text-white text-sm px-3 py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
         Chat with us on WhatsApp
       </span>
+
       <a
         href={whatsappLink}
         target="_blank"
