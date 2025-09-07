@@ -202,7 +202,7 @@ export default function AboutPage () {
                     <li className='flex items-start'>
                       <Clock className='h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0' />
                       <span className='text-muted-foreground'>
-                        4-5 days turnaround
+                        3 days turnaround
                       </span>
                     </li>
                   </ul>
@@ -219,7 +219,7 @@ export default function AboutPage () {
                 <div className='bg-card p-8 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border-2 border-primary relative'>
                   <div className='absolute -top-4 left-1/2 transform -translate-x-1/2'>
                     <span className='bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium'>
-                      Most Popular
+                     
                     </span>
                   </div>
                   <div className='text-center mb-6'>
@@ -255,7 +255,7 @@ export default function AboutPage () {
                     <li className='flex items-start'>
                       <Clock className='h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0' />
                       <span className='text-muted-foreground'>
-                        3 days turnaround
+                        4-5 days turnaround
                       </span>
                     </li>
                   </ul>

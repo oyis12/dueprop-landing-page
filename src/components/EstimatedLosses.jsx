@@ -86,12 +86,12 @@ export default function EstimatedLosses () {
             <p className='text-gray-700 text-xs md:text-sm leading-relaxed mt-2 md:mt-3'>
               Whether it’s verifying true land ownership, confirming accurate
               location and boundaries, or validating authentic documentation,
-              Duespro ensures every step of your property transaction is backed
+              Dueprop ensures every step of your property transaction is backed
               by data, legal checks, and insight from vetted professionals.
             </p>
             <p className='text-gray-700 text-xs md:text-sm leading-relaxed mt-2 md:mt-3'>
               We’re not just preventing fraud—we’re building confidence. One
-              verification at a time, Duespro helps Nigerians make smarter,
+              verification at a time, Dueprop helps Nigerians make smarter,
               safer real estate decisions.
             </p>
           </div>
