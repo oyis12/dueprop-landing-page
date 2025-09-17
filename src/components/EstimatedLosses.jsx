@@ -78,22 +78,15 @@ export default function EstimatedLosses () {
               Our Offerings
             </h3>
             <p className='text-gray-700 text-xs md:text-sm leading-relaxed'>
-              With these alarming figures above, we’re bridging the trust gap in
-              Nigeria’s real estate sector by offering gradual, expert-backed
-              due diligence services that make it safer for buyers, investors,
-              and developers to avoid costly mistakes.
+             With the report above emanating from the World Bank, we are bridging the gap in Nigeria real estate sector by offering expert due diligence services that make it easier for buyers, investors and developers to avoid costly mistakes.
+Are you verifying true land ownership, confirming location and boundaries or validating authentic documentation, Dueprop.com ensures every step of your property transaction is backed by data, legal checks and insights from vetted professionals.
             </p>
             <p className='text-gray-700 text-xs md:text-sm leading-relaxed mt-2 md:mt-3'>
-              Whether it’s verifying true land ownership, confirming accurate
-              location and boundaries, or validating authentic documentation,
-              Dueprop ensures every step of your property transaction is backed
-              by data, legal checks, and insight from vetted professionals.
+             We are not just cubing menace and fraud, we are building confidence. One verification at a time, Dueprop.com help make smarter, safer real estate decisions.
+If you are a first time buyer or a seasoned investor, Dueprop.com simplifies land/property verification. Our platform combines government data with analysis and expert-backed insights – empowering you to make secure, informed real estate/property purchase with confidence across Nigeria.
+
             </p>
-            <p className='text-gray-700 text-xs md:text-sm leading-relaxed mt-2 md:mt-3'>
-              We’re not just preventing fraud—we’re building confidence. One
-              verification at a time, Dueprop helps Nigerians make smarter,
-              safer real estate decisions.
-            </p>
+             
           </div>
         </div>
       </div>

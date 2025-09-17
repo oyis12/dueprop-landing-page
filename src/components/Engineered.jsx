@@ -41,10 +41,7 @@ export default function Engineered () {
             </h2>
 
             <p className='mt-3 max-w-xl text-slate-600'>
-              We combine local expertise, deep insights, and cutting-edge
-              technology to bring transparency and trust to Nigeria’s real
-              estate landscape—empowering you to verify land and property with
-              confidence before you invest.
+             We combine local expertise, deep insights and cutting-edge technology to bring best practice and trust to Nigeria’s real estate landscape – empowering you to make the best property investment decision.
             </p>
 
             {/* Bordered list */}
